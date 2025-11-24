@@ -1,0 +1,36 @@
+[project]
+name = "pxt-cloud-sets"
+version = "0.1.0"
+description = "Pixeltable Cloud datasets from various sources"
+requires-python = ">=3.10"
+dependencies = [
+    "pixeltable>=0.4.23",
+    "datasets>=2.14.0",
+    "torchcodec>=0.1.0",
+    "twelvelabs>=0.2.0",
+    "fiftyone>=1.10.0",
+    "transformers>=4.57.1",
+    "torch>=2.8.0",
+    "httpx>=0.27.0",
+    "requests>=2.32.0",
+    "openai>=2.7.2",
+    "torchvision>=0.24.0",
+    "yt-dlp>=2025.11.12",
+    "roboflow>=1.2.11",
+    "google-genai>=1.49.0",
+    "accelerate>=1.11.0",
+    "pillow>=12.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.31.0",
+    "jupyter>=1.1.1",
+]
+
